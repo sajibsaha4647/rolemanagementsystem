@@ -1,4 +1,7 @@
 @extends('layouts.admin')
+@section('title')
+Deshboard-Role-And-permission
+@endsection
 @section('mainContent')
             <div class="main-content-inner">
                 <!-- sales report area start -->
@@ -106,12 +109,12 @@
                                                 <td class="stats-chart">Stats</td>
                                             </tr>
                                             <tr>
-                                                <td class="mv-icon"><img src="assets/images/icon/market-value/icon1.png" alt="icon">
+                                                <td class="mv-icon"><img src="{{ asset('admin') }}/assets/images/icon/market-value/icon1.png" alt="icon">
                                                 </td>
                                                 <td class="coin-name">Dashcoin</td>
-                                                <td class="buy">30% <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="sell">20% <img src="assets/images/icon/market-value/triangle-up.png" alt="icon"></td>
-                                                <td class="trends"><img src="assets/images/icon/market-value/trends-up-icon.png" alt="icon"></td>
+                                                <td class="buy">30% <img src="{{ asset('admin') }}/assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
+                                                <td class="sell">20% <img src="{{ asset('admin') }}/assets/images/icon/market-value/triangle-up.png" alt="icon"></td>
+                                                <td class="trends"><img src="{{ asset('admin') }}/assets/images/icon/market-value/trends-up-icon.png" alt="icon"></td>
                                                 <td class="attachments">$ 56746,857</td>
                                                 <td class="stats-chart">
                                                     <canvas id="mvaluechart"></canvas>
@@ -119,12 +122,12 @@
                                             </tr>
                                             <tr>
                                                 <td class="mv-icon">
-                                                    <div class="mv-icon"><img src="assets/images/icon/market-value/icon2.png" alt="icon"></div>
+                                                    <div class="mv-icon"><img src="{{ asset('admin') }}/assets/images/icon/market-value/icon2.png" alt="icon"></div>
                                                 </td>
                                                 <td class="coin-name">LiteCoin</td>
-                                                <td class="buy">30% <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="sell">20% <img src="assets/images/icon/market-value/triangle-up.png" alt="icon"></td>
-                                                <td class="trends"><img src="assets/images/icon/market-value/trends-down-icon.png" alt="icon"></td>
+                                                <td class="buy">30% <img src="{{ asset('admin') }}/assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
+                                                <td class="sell">20% <img src="{{ asset('admin') }}/assets/images/icon/market-value/triangle-up.png" alt="icon"></td>
+                                                <td class="trends"><img src="{{ asset('admin') }}/assets/images/icon/market-value/trends-down-icon.png" alt="icon"></td>
                                                 <td class="attachments">$ 56746,857</td>
                                                 <td class="stats-chart">
                                                     <canvas id="mvaluechart2"></canvas>
@@ -132,12 +135,12 @@
                                             </tr>
                                             <tr>
                                                 <td class="mv-icon">
-                                                    <div class="mv-icon"><img src="assets/images/icon/market-value/icon3.png" alt="icon"></div>
+                                                    <div class="mv-icon"><img src="{{ asset('admin') }}/assets/images/icon/market-value/icon3.png" alt="icon"></div>
                                                 </td>
                                                 <td class="coin-name">Euthorium</td>
-                                                <td class="buy">30% <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="sell">20% <img src="assets/images/icon/market-value/triangle-up.png" alt="icon"></td>
-                                                <td class="trends"><img src="assets/images/icon/market-value/trends-up-icon.png" alt="icon"></td>
+                                                <td class="buy">30% <img src="{{ asset('admin') }}/assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
+                                                <td class="sell">20% <img src="{{ asset('admin') }}/assets/images/icon/market-value/triangle-up.png" alt="icon"></td>
+                                                <td class="trends"><img src="{{ asset('admin') }}/assets/images/icon/market-value/trends-up-icon.png" alt="icon"></td>
                                                 <td class="attachments">$ 56746,857</td>
                                                 <td class="stats-chart">
                                                     <canvas id="mvaluechart3"></canvas>
@@ -145,12 +148,12 @@
                                             </tr>
                                             <tr>
                                                 <td class="mv-icon">
-                                                    <div class="mv-icon"><img src="assets/images/icon/market-value/icon4.png" alt="icon"></div>
+                                                    <div class="mv-icon"><img src="{{ asset('admin') }}/assets/images/icon/market-value/icon4.png" alt="icon"></div>
                                                 </td>
                                                 <td class="coin-name">Bitcoindash</td>
-                                                <td class="buy">30% <img src="assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
-                                                <td class="sell">20% <img src="assets/images/icon/market-value/triangle-up.png" alt="icon"></td>
-                                                <td class="trends"><img src="assets/images/icon/market-value/trends-up-icon.png" alt="icon"></td>
+                                                <td class="buy">30% <img src="{{ asset('admin') }}/assets/images/icon/market-value/triangle-down.png" alt="icon"></td>
+                                                <td class="sell">20% <img src="{{ asset('admin') }}/assets/images/icon/market-value/triangle-up.png" alt="icon"></td>
+                                                <td class="trends"><img src="{{ asset('admin') }}/assets/images/icon/market-value/trends-up-icon.png" alt="icon"></td>
                                                 <td class="attachments">$ 56746,857</td>
                                                 <td class="stats-chart">
                                                     <canvas id="mvaluechart4"></canvas>
@@ -301,7 +304,7 @@
                                 <div class="letest-news mt-5">
                                     <div class="single-post mb-xs-40 mb-sm-40">
                                         <div class="lts-thumb">
-                                            <img src="assets/images/blog/post-thumb1.jpg" alt="post thumb">
+                                            <img src="{{ asset('admin') }}/assets/images/blog/post-thumb1.jpg" alt="post thumb">
                                         </div>
                                         <div class="lts-content">
                                             <span>Admin Post</span>
@@ -311,7 +314,7 @@
                                     </div>
                                     <div class="single-post">
                                         <div class="lts-thumb">
-                                            <img src="assets/images/blog/post-thumb2.jpg" alt="post thumb">
+                                            <img src="{{ asset('admin') }}/assets/images/blog/post-thumb2.jpg" alt="post thumb">
                                         </div>
                                         <div class="lts-content">
                                             <span>Admin Post</span>
